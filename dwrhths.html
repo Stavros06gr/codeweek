@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="gr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/jpg" href="logo.jpg">
+    <title>P.P.A.R.O.M.</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(38, 158, 228);
+            margin: 0px;
+        }
+        main{
+            color: aqua;
+        }
+        a{
+            text-decoration: none;    
+            color: aqua;        
+        }
+        hr{
+            margin: 20px 0;
+        }
+        .image{
+            width: 50%;
+            margin-left: 25%;
+        }
+        input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=number], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+            font-size: 15px;
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+            box-shadow: 0px 0px 18px 2px #45a049;
+        }
+
+        div {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            color: black;
+            margin-top: 2%;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 2%;
+            box-shadow: 0px 0px 8px 1px #f2f2f2;
+        }
+        .tit{
+            text-align: center;
+            font-weight: 600;
+            font-size: 40px;
+            margin: 1%;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <a href="main.html">
+            <img src="image.jpg" alt="image" class="image">
+        </a>
+    </header>
+    <main>
+        
+        <div>
+            <p class="tit">Αίτηση δωρεάς</p>
+
+            <p>Συμπληρώστε τα παρακάτω επίπεδα για να μπορέσετε να δωρίσετε το φάρμακο σας. Τα επίπεδα με * είναι υποχρεωτικά.</p>
+            <hr>
+
+            <form action="dwr-conn.html">
+              <label for="fname">Όνομα*</label>
+              <input type="text" id="fname" name="firstname" placeholder="Το όνομα σου.." required>
+          
+              <label for="lname">Επίθετο*</label>
+              <input type="text" id="lname" name="lastname" placeholder="Το επίθετο σου.." required>
+
+              <label for="cname">Όνομα επιχείρησης</label>
+              <input type="text" id="cname" name="cname" placeholder="Το όνομα της επιχείρησης..">  
+
+              <label for="region">Περιοχή*</label>
+              <input type="text" id="region" name="region" placeholder="Η περιοχή σου.." required>
+
+              <label for="tel">Τηλέφωνο*</label>
+              <input type="number" id="tel" name="tel" placeholder="Τηλέφωνο.." required>
+                
+              <label for="email">Email*</label>
+              <input type="text" id="email" name="email" placeholder="Email.." required>    
+
+              <label for="medicine">Όνομα φαρμάκου*</label>
+              <input type="text" id="medicine" name="medicine" placeholder="Το όνομα του φαρμάκου.." required>
+
+              <label for="comments">Περιγραφή φαρμάκου/ Συμβουλές για αυτόν που θα το παραλάβει</label> 
+              <textarea id="comments" cols="30" rows="5" placeholder="πχ. θερμοκρασία συντήρισης"></textarea> 
+            
+              <label for="expire">Ημερομηνία λήξης*</label> 
+              <input type="date" id="expire" required></input> 
+
+              <input type="submit" value="Υποβολή">
+            </form>
+          </div>
+
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>

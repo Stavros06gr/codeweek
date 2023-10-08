@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="gr">
+<head>
+    <meta charset="UTF-8">
+    <title>P.P.A.R.O.M.</title>
+    <link rel="icon" type="image/jpg" href="logo.jpg">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(38, 158, 228);
+            margin: 0px;
+        }
+        main{
+            color: aqua;
+        }
+        a{
+            text-decoration: none;    
+            color: aqua;        
+        }
+        .image{
+            width: 50%;
+            margin-left: 25%;
+        }
+        hr{
+            margin: 20px 0;
+        }
+        input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=number], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+            font-size: 15px;
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+            box-shadow: 0px 0px 18px 2px #45a049;
+        }
+
+        div {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            color: black;
+            margin-top: 2%;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 2%;
+            box-shadow: 0px 0px 8px 1px #f2f2f2;
+        }
+        .tit{
+            text-align: center;
+            font-weight: 600;
+            font-size: 40px;
+            margin: 1%;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <a href="main.html">
+            <img src="image.jpg" alt="image" class="image">
+        </a>
+    </header>
+    <main>
+        <div>
+            <p class="tit">Αίτηση για παραλαβή φαρμάκων</p>
+
+            <p>Συμπληρώστε τα παρακάτω επίπεδα για να μπορέσετε να παραλάβετε το φάρμακο που θέλετε. Τα επίπεδα με * είναι υποχρεωτικά.</p>
+            <hr>
+
+            <form action="par-con.html">
+              <label for="fname">Όνομα*</label>
+              <input type="text" id="fname" name="firstname" placeholder="Το όνομα σου.." required>
+          
+              <label for="lname">Επίθετο*</label>
+              <input type="text" id="lname" name="lastname" placeholder="Το επίθετο σου.." required>
+
+              <label for="region">Περιοχή*</label>
+              <input type="text" id="region" name="region" placeholder="Η περιοχή σου.." required>
+
+              <label for="tel">Τηλέφωνο*</label>
+              <input type="number" id="tel" name="tel" placeholder="Τηλέφωνο.." required>
+                
+              <label for="email">Email*</label>
+              <input type="text" id="email" name="email" placeholder="Email.." required>  
+
+              <label for="medicine">Όνομα φαρμάκου που χρειάζεστε*</label>
+              <input type="text" id="medicine" name="medicine" placeholder="Το όνομα του φαρμάκου.." required>
+
+              <!-- <label for="expire">Ημερομηνία λήξης*</label> 
+              <input type="date" id="expire" required></input>  -->
+
+              <input type="submit" value="Υποβολή">
+            </form>
+          </div>
+
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
